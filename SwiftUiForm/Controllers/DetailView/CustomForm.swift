@@ -51,6 +51,7 @@ struct CustomForm: View {
 
 struct CustomForm_Previews: PreviewProvider {
     static var previews: some View {
-        CustomForm(question: questionData[2])
+        CustomForm(question: questionData[1])
+        
     }
 }

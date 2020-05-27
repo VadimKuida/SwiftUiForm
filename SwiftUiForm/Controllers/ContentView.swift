@@ -8,14 +8,26 @@
 
 import SwiftUI
 
+
+
 struct ContentView: View {
     
     @State private var showingLoginView = false
     
+    
+
+
+         
+
+
+    
+    
+
+    
+    
     var body: some View {
         
         NavigationView {
-            
                   
             VStack(alignment: .leading) {
                 GeometryReader { geometry in

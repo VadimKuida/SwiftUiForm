@@ -25,6 +25,7 @@ import Firebase
 //}
 
 
+
 struct LoginView: View {
     
         @State var showingDetail = false
@@ -38,7 +39,8 @@ struct LoginView: View {
         @State var uidUser: String = ""
         var regNewUser = logInUser(u: "test")
         @State var showingNew = false
-    
+        
+
     
         @ObservedObject var uidPub = PublicVar()
     
@@ -203,7 +205,7 @@ struct LoginView: View {
 //                CustomFormRow(questions: questionData)
 //                    TagView()
 //                    DetailViewDiscNew(showingNew:  self.$showingNew)
-                        PickerView()
+                        CustomFormList()
                 ){
                     Text("Переход")
                 }
@@ -227,7 +229,6 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView(
-        )
+        LoginView()
     }
 }

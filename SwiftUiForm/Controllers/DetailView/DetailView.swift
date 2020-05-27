@@ -33,28 +33,10 @@ struct DetailView: View {
                       .foregroundColor(Color.init(#colorLiteral(red: 0.7843137255, green: 0.7803921569, blue: 0.8, alpha: 1)))
                           .frame(width: 300, height: 40, alignment: .top)
                           .padding(.top, 40)
-                
-            CustomFormRow(questions: questions).padding()
-//                   VStack {
-//                    
-//                       // 2.
-//                       List(fetch.todos) { todo in
-//                           VStack(alignment: .leading) {
-//                               // 3.
-//                               Text(todo.name)
-//////                               Text("\(todo.completed.description)") // print boolean
-//////                                   .font(.system(size: 11))
-//////                                   .foregroundColor(Color.gray)
-//                            Button(action: {
-//                                print(todo.id)
-//                            })
-//                            {
-//                                Text("")
-//
-//                            }
-//                           }
-//                       }
-//                   }
+            
+            ScrollView(showsIndicators: false) {
+                CustomFormList().padding().frame(width: 320)
+            }
             } //ZStack
 //                    .navigationBarTitle(Text("Привет \(self.firstName)!!!"))
 //                            .edgesIgnoringSafeArea(.top)
